@@ -5,12 +5,11 @@
     font-family: Verdana;
     color:white;
     scroll-behavior: smooth;
-    color:black;
 }
 
 body {
     overflow-x: hidden;
-    background: white;
+    background: #bbb;
 }
 
 :root {
@@ -20,6 +19,7 @@ body {
 .header__banner {
     position: relative;
     display: flex;
+    flex-direction:column ;
     justify-content: center;
     height: 40vh;
     background: url(../img/banner-two.jpg) center center/cover;
@@ -41,7 +41,7 @@ body {
     height: 150px;
 }
 
-.header__h2 {
+.header__h1 {
     font-size: 50px;
     z-index:50;
     color:white;
@@ -53,6 +53,7 @@ body {
     top:0px;
     width: 100%;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     background: var(--background-color);
     padding:10px 15px;
@@ -63,7 +64,7 @@ body {
     display: none;
 }
 
-.nav__h1, .nav__h1-responsive {
+.nav__h1-responsive {
     font-size: 17px;
     left:10px;
     color: white;
@@ -78,7 +79,6 @@ body {
     list-style: none;
     margin-right: 0px;
     position: absolute;
-    right: 10px;
 }
 
 .nav__li-a, .nav__li-a-responsive {
@@ -87,30 +87,102 @@ body {
     color: white;
     text-decoration: none;
     user-select: none;
+    display: flex;
+    gap:5px;
 }
 
-.nav__li:hover > a, .nav__li-responsive:hover > a {
+.arrow-rotate {
+    transform: translateY(2px) rotate(-90deg);
+}
+
+.nav__li:hover > a, .nav__li-responsive:hover > a , .nav__li:hover > a p{
     background: white;
     color:var(--background-color);
 }
+
+.nav__li:hover > .events-ul {
+    display: flex;
+    flex-direction: column;
+} 
+
+.nav__li-tecnicaturas {
+    position: relative;
+}
+
+.events-ul {
+    z-index: -1;
+    display: none;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    list-style:none;
+    background: rgb(116, 10, 10);
+    border:1px solid black;
+}
+
+.events-ul__li {
+    z-index: 100000000;
+    padding: 15px 20px;
+    border:1px solid transparent;
+}
+
+.events-ul__li:hover {
+    background: white;
+    color:var(--background-color);
+    border:1px solid var(--background-color);
+}
+
+.events-ul__li-a {
+    color:inherit;
+    padding:15px 20px;
+    width: max-content;
+    text-decoration: none;
+}
+
+
 
 /* diseño de la seccion de informacion de las tecnicaturas */
 
 .presentation {
     display: flex;
-    width: 70%;
-    margin:40px;
+    gap:20px;
+    width: 100%;
+    margin:10px;
 }
 
 .presentation__card-one {
-    padding: 10px;
+    padding: 30px;
     width: 80%;
     display: flex;
     flex-direction: column;
-    flex:10;
-    background:rgba(240, 240, 240, 1);
+    width: 80%;
+    background: var(--background-color);
+}
+
+
+.card-one__h1-presentation {
+    color:white;
+}
+
+.card-one__p-presentation {
+    color:white
 }
 
 .presentation__li {
     margin-left: 30px;
+    color:white;
+}
+
+.presentation__li a {
+    color:white;
+    text-decoration: none;
+}
+
+aside {
+    width: 20%;
+    margin-right: 120px;
+}
+
+aside img {
+    width: 100%;
 }

@@ -1,8 +1,4 @@
 @media only screen and (max-width: 900px) and (min-width: 700px) {
-  .nav__h1 {
-    font-size: 15px;
-  }
-
   .nav__ul {
     padding: 20px 10px;
   }
@@ -14,7 +10,11 @@
 
 @media only screen and (max-width: 950px) {
   .header__banner img {
-    width: 100%;
+    width: max-content;
+  }
+
+  .header__h1 {
+    font-size:20px;
   }
 }
 
@@ -48,8 +48,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-right: -295px;
     transition: transform 0.5s;
+    transform: translateX(340px);
   }
 
   .nav__li-responsive {
@@ -65,6 +65,24 @@
 
   .QuitNav {
     display: flex;
-    transform: translateX(-295px);
+    transform: translateX(0px);
+  }
+}
+
+
+
+
+
+@media only screen and (max-width:340px) {
+  .header__h1 {
+    font-size:15px;
+  }
+
+  .nav__ul-responsive {
+    width: 100%;
+  }
+
+  .nav__h1-responsive {
+    font-size: 15px;
   }
 }

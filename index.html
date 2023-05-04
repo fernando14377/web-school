@@ -8,6 +8,7 @@
 	<!-- CSS Custom -->
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/global.css">
+	<link rel="stylesheet" href="./css/cards.css">
 	<!-- CSS Responsive -->
 	<link rel="stylesheet" href="./css/responsive.css">
 	<!-- Font Awesome -->
@@ -19,23 +20,38 @@
 		<div class="header__banner">
 			<div class="header__bg-color"></div>
 			<img class="header__img" src="./icon-school.png" alt="">
-			<h2 class="header__h2">E.E.T.N°2 "Independencia"</h2>
+			<h1 class="header__h1">E.E.T.N°2 "Independencia"</h1>
 		</div>
 	</header>
 	<!-- barra de navegación - escritorio -->
 	<nav class="nav">
-		<h1 class="nav__h1">Escuela Técnica N°2 "Independencia"</h1>
 		<ul class="nav__ul">
 			<li class="nav__li"><a href="index.html" class="nav__li-a">Inicio</a></li>
 			<li class="nav__li"><a href="#" class="nav__li-a">Formación profesional</a></li>
-			<li class="nav__li"><a href="#" class="nav__li-a">Eventos</a></li>
+			<li class="nav__li">
+				<a class="nav__li-a" href="#">Eventos <p class="arrow-rotate">&#60</p></a>
+				<ul  class="events-ul">
+					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Expo 2023</a></li>
+					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Desfile de moda</a></li>
+					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Eleccion de reyes</a></li>
+					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Maraton 2023</a></li>
+				</ul>	
+			</li>
+			<li class="nav__li nav__li-tecnicaturas">
+				<a class="nav__li-a" href="#">Tecnicaturas <p class="arrow-rotate">&#60</p></a>
+				<ul  class="events-ul">
+					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Computación</a></li>
+					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Adm. de Empresas</a></li>
+					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Gastronomia</a></li>
+				</ul>
+			</li>
 			<li class="nav__li"><a href="#" class="nav__li-a">Ingresantes 2023</a></li>
 			<li class="nav__li"><a href="#" class="nav__li-a">Contactanos</a></li>
 		</ul>
 	</nav>
 	<!-- barra de navegación - telefono -->
 	<nav class="nav-responsive">
-		<h1 class="nav__h1-responsive">Escuela Técnica N°2 "Independencia"</h1>
+		<h1 class="nav__h1-responsive">E.E.T.N°2 "Independencia"</h1>
 		<div class="nav-responsive__nav-btn"><i class="fa-solid fa-bars"></i></div>
 		<ul class="nav__ul-responsive" id="navResponsive">
 			<li class="nav__li-responsive"><a href="index.html" class="nav__li-a-responsive">Inicio</a></li>
@@ -48,22 +64,25 @@
 	<section class="presentation">
 		<div class="presentation__card-one">
 			<h1 class="card-one__h1-presentation">E.E.T.N°2 Independencia</h1>
-			<p class="card-one__p-presentation" style="color:var(--background-color)">Bienvenido a la escuela Técnica N°2 Independencia nuestra amada y querida institución brinda tres tecnicaturas para los jovenes y/o futuros tecnicos, de momento las que brindamos son:</p>
+			<p class="card-one__p-presentation">Bienvenido a la escuela Técnica N°2 Independencia nuestra amada y querida institución brinda tres tecnicaturas para los jovenes y/o futuros tecnicos, de momento las que brindamos son:</p>
 			<ul class="presentation__ul">
-				<li class="presentation__li"><a href="#computer">Tecnico/a en Computación</a></li>
-				<li class="presentation__li"><a href="#admin">Tecnico/a en Administración de empresas</a></li>
-				<li class="presentation__li"><a href="#foot">Tecnico/a en Gastronomia</a></li>
+				<li class="presentation__li"><a href="#computer">Tecnico en Computación</a></li>
+				<li class="presentation__li"><a href="#admin">Tecnico en Administración de Empresas</a></li>
+				<li class="presentation__li"><a href="#foot">Tecnico en Gastronomia</a></li>
 			</ul>
+			<div class="container-card">
+				<div class="card-computer">
+					<img class="card-img" src="https://i.pinimg.com/originals/9a/a1/41/9aa1414ae10ccf236cca0b7174ec4d8d.png" alt="">
+					<h2 class="card-computer__h2">Computación</h2>
+					<p class="card-computer__p">En esta tecnicatura aprenderas a programar páginas, arreglar computadoras, aprender sus componentes y por ultimo manejar redes.</p>
+					<a class="card-computer__a" href="#">mas información</a>
+				</div>
+			</div>
 		</div>
 		<aside>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3405.6313859236902!2d-58.016165082556164!3d-31.396725999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1682535388291!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<img src="./img/aside-img.jpg" alt="">
 		</aside>
 	</section>
-	<!-- <section class="container">
-		<h2 class="card-one__h2">Tecnicaturas</h2>
-		
-	</section> -->
-	
 	<script src="./js/main.js"></script>
 </body>
 </html>
