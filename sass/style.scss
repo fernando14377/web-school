@@ -1,0 +1,127 @@
+@charset "UTF-8";
+$primario:#fff;
+$color-pared:white;
+$font-title:'Oswald';
+$color-school:rgb(69, 6, 6);
+$box_shadow-cards:rgb(46, 3, 3);
+$font-text:"Times New Roman";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald";
+    color: white;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+@import './components/nav.scss';
+@import './components/nav-responsive.scss';
+
+.section-school {
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url("../img/section-school.jpg");
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    .container-text {
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-family: $font-title, serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        h1 {
+           font-size:50px;
+        }
+
+        p {
+            font-family: monospace;
+            font-size: 50px;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+/* diseño de la seccion de informacion de las tecnicaturas */
+@import './components/cards.scss';
+.card-one {
+    height: max-content;
+}
+
+.card-one, .section-fp {
+    padding: 30px;
+    width: 100%;
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+    background:$color-school;
+    .card__h1 {
+        color: whitesmoke;
+        margin: auto;
+        font-family: $font-title,sans-serif;
+        font-size: 40px;
+    }
+}
+
+.section-fp {
+    padding:0;
+    .card__h1 {
+        width: 100%;
+        background: rgb(46, 3, 3);
+    }
+}
+
+.card-one {
+    text-align: center;
+    .card__p-subtitle {
+        font-size:25px;
+    }
+}
+
+
+@import './components/responsive.scss';
+
+
+@keyframes aparecer {
+    0% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes rotateInitial {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
