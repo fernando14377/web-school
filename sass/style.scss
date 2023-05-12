@@ -78,13 +78,6 @@ body {
     }
 }
 
-.section-fp {
-    padding:0;
-    .card__h1 {
-        width: 100%;
-        background: rgb(46, 3, 3);
-    }
-}
 
 .card-one {
     text-align: center;
@@ -113,15 +106,5 @@ body {
 
     100% {
         transform: rotate(-90deg);
-    }
-}
-
-@keyframes rotateInitial {
-    0% {
-        transform: rotate(-90deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
     }
 }

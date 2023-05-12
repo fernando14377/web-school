@@ -5,26 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>E.E.T.N°2 Independencia</title>
 	<link rel="icon" href="./icon-school.png">
+	<!-- Font Oswald -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Indic+Siyaq+Numbers&family=Noto+Sans+Math&family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<!-- Font Roboto slab -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Indic+Siyaq+Numbers&family=Noto+Sans+Math&family=Oswald:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 	<!-- CSS Custom -->
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/global.css">
 	<link rel="stylesheet" href="./css/cards.css">
-	<!-- CSS Responsive -->
-	<link rel="stylesheet" href="./css/responsive.css">
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/f845b9182b.js" crossorigin="anonymous"></script>
+	<!-- libreria animate.css -->
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  	/>
 </head>
-<body>
-	<!-- encabezado -->
-	<header>
-		<div class="header__banner">
-			<div class="header__bg-color"></div>
-			<img class="header__img" src="./icon-school.png" alt="">
-			<h1 class="header__h1">E.E.T.N°2 "Independencia"</h1>
-		</div>
-	</header>
+<body class="body">
 	<!-- barra de navegación - escritorio -->
 	<nav class="nav">
+		<img style="width: 80px;height: 80px;" src="./icon-school.png" alt="">
 		<ul class="nav__ul">
 			<li class="nav__li"><a href="index.html" class="nav__li-a">Inicio</a></li>
 			<li class="nav__li"><a href="#" class="nav__li-a">Formación profesional</a></li>
@@ -33,7 +37,6 @@
 				<ul  class="events-ul">
 					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Expo 2023</a></li>
 					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Desfile de moda</a></li>
-					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Eleccion de reyes</a></li>
 					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Maraton 2023</a></li>
 				</ul>	
 			</li>
@@ -42,7 +45,7 @@
 				<ul  class="events-ul">
 					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Computación</a></li>
 					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Adm. de Empresas</a></li>
-					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Gastronomia</a></li>
+					<li class="events-ul__li"><a class="events-ul__li-a" href="#">Gastronomía</a></li>
 				</ul>
 			</li>
 			<li class="nav__li"><a href="#" class="nav__li-a">Ingresantes 2023</a></li>
@@ -50,39 +53,82 @@
 		</ul>
 	</nav>
 	<!-- barra de navegación - telefono -->
-	<nav class="nav-responsive">
-		<h1 class="nav__h1-responsive">E.E.T.N°2 "Independencia"</h1>
-		<div class="nav-responsive__nav-btn"><i class="fa-solid fa-bars"></i></div>
-		<ul class="nav__ul-responsive" id="navResponsive">
-			<li class="nav__li-responsive"><a href="index.html" class="nav__li-a-responsive">Inicio</a></li>
-			<li class="nav__li-responsive"><a href="#" class="nav__li-a-responsive">Formación profesional</a></li>
-			<li class="nav__li-responsive"><a href="#" class="nav__li-a-responsive">Eventos</a></li>
-			<li class="nav__li-responsive"><a href="#" class="nav__li-a-responsive">Ingresantes 2023</a></li>
-			<li class="nav__li-responsive"><a href="#" class="nav__li-a-responsive">Contactanos</a></li>
-		</ul>
-	</nav>
-	<section class="presentation">
-		<div class="presentation__card-one">
-			<h1 class="card-one__h1-presentation">E.E.T.N°2 Independencia</h1>
-			<p class="card-one__p-presentation">Bienvenido a la escuela Técnica N°2 Independencia nuestra amada y querida institución brinda tres tecnicaturas para los jovenes y/o futuros tecnicos, de momento las que brindamos son:</p>
-			<ul class="presentation__ul">
-				<li class="presentation__li"><a href="#computer">Tecnico en Computación</a></li>
-				<li class="presentation__li"><a href="#admin">Tecnico en Administración de Empresas</a></li>
-				<li class="presentation__li"><a href="#foot">Tecnico en Gastronomia</a></li>
+		<nav class="nav-responsive">
+			<h1 class="nav__h1-responsive">E.E.T.N°2 "Independencia"</h1>
+			<div class="nav-responsive__nav-btn"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-x btn-x-nav" style="font-family: monospace;"></i></div>
+			<ul class="nav__ul-responsive" id="navResponsive">
+				<li class="nav__li-responsive"><a href="index.html" class="nav__li-a-responsive">Inicio</a></li>
+				<li class="nav__li-responsive"><a href="#" class="nav__li-a-responsive">Formación profesional</a></li>
+				<li class="nav__li-responsive"><a href="#" class="nav__li-a-responsive">Eventos</a></li>
+				<li class="nav__li-responsive"><a href="#" class="nav__li-a-responsive">Ingresantes 2023</a></li>
+				<li class="nav__li-responsive"><a href="#" class="nav__li-a-responsive">Contactanos</a></li>
 			</ul>
+		</nav>
+	<section class="section-school">
+		<div class="container-text">
+			<p>Bienvenidos</p>
+			<h1>Técnica N°2 "Independencia"</h1>
+		</div>
+	</section>
+	<section class="card-one">
+		<h1 class="card__h1">Tecnicaturas</h1>
+		<p class="card__p-subtitle">Títulos con Habilitación Profesional Nacional</p>
+		<div class="container-cards" style="display: flex; flex-wrap: wrap; gap:100px;margin:auto;">			
 			<div class="container-card">
-				<div class="card-computer">
-					<img class="card-img" src="https://i.pinimg.com/originals/9a/a1/41/9aa1414ae10ccf236cca0b7174ec4d8d.png" alt="">
-					<h2 class="card-computer__h2">Computación</h2>
-					<p class="card-computer__p">En esta tecnicatura aprenderas a programar páginas, arreglar computadoras, aprender sus componentes y por ultimo manejar redes.</p>
-					<a class="card-computer__a" href="#">mas información</a>
+				<div class="card">
+					<img class="card__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fegobex.net%2Fwp-content%2Fuploads%2F2021%2F05%2FAdministracion-de-empresas-Todo-lo-que-debes-saber-si-quieres-estudiar-esta-carrera1-min-768x404.png&f=1&nofb=1&ipt=413898dc14d4ef17f4876e4e2eedc9840f0c84423fc5c2201fb21b45512d8a41&ipo=images" alt="">
+					<h2 class="card__h2">Adm de Empresas</h2>
+					<p class="card__p">El técnico en administración de empresas estara capacitado para  la gestión organizacional y comprender las actividades que hacen al desarrollo de tareas y toma de decisiones programadas, relacionadas con las operaciones de compra y venta, gestión de los recursos humanos, gestión de los fondos y el registro contable. Además, está capacitado para colaborar con algunas actividades relacionadas con la planificación y control organizacional conforme se explicita en el perfil profesional.</p>
+					<a class="card__a" href="#">mas información</a>
+				</div>
+			</div>
+			<div class="container-card">
+				<div class="card">
+					<img class="card__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F4pqWxJ702s4%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=9832f3530a7041cf03cd4b60df6a8ce39dbd1ddba0eb074ff51959390ba11c2f&ipo=images" alt="">
+					<h2 class="card__h2">Computación</h2>
+					<p class="card__p">El Técnico en Computación estará capacitado para asistir al usuario de productos y servicios informáticos brindándole servicios de instalación, capacitación, sistematización, mantenimiento primario, resolución de problemas derivados de la operatoria, y apoyo a la contratación de productos o servicios informáticos, desarrollando las actividades descriptas en su perfil profesional y pudiendo actuar de nexo entre el especialista o experto en el tema, producto o servicio y el usuario final.</p>
+					<a class="card__a" href="#">mas información</a>
+				</div>
+			</div>
+			<div class="container-card">
+				<div class="card">
+					<img class="card__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjockeyplaza.com.pe%2Fresources%2F1139x640-20161025112212.jpg&f=1&nofb=1&ipt=ac50f84f683879337d0ae7818b3813fbecfabbd9451d4c2bb72656d297fdb1b7&ipo=images" alt="">
+					<h2 class="card__h2">Gastronomía</h2>
+					<p class="card__p">El Técnico en Gastronomía está capacitado para desarrollar los procesos de pre elaboración, preparación y conservación de elaboraciones culinarias básicas y avanzadas, aplicando con autonomía las técnicas correspondientes, consiguiendo la calidad y estructuras de sabor de las principales gastronomías locales, regionales, nacionales e internacionales.</p>
+					<a class="card__a" href="#">mas información</a>
 				</div>
 			</div>
 		</div>
-		<aside>
-			<img src="./img/aside-img.jpg" alt="">
-		</aside>
+	</div>
+</section>
+<section class="section-fp" style="text-align: center;">
+	<h3 class="card__h1">Formación Profesional</h3>
+	<div class="container-cards" style="display: flex; flex-wrap: wrap; gap:100px;margin:auto;">
+		<div class="container-card">
+			<div class="card">
+				<img class="card__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F4pqWxJ702s4%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=9832f3530a7041cf03cd4b60df6a8ce39dbd1ddba0eb074ff51959390ba11c2f&ipo=images" alt="">
+				<h2 class="card__h2">Vitrofusión</h2>
+				<p class="card__p">La Vitrofusión es el arte de unir, fusionar, modelar y superponer vidrio con calor. Es un proceso donde se calientan dos o más vidrios a altas temperaturas hasta que estos se junten logrando como resultado final una pieza homogénea y libre de tensiones.</p>
+				<a class="card__a" href="#">mas información</a>
+			</div>
+		</div>
+		<div class="container-card">
+			<div class="card">
+				<img class="card__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fegobex.net%2Fwp-content%2Fuploads%2F2021%2F05%2FAdministracion-de-empresas-Todo-lo-que-debes-saber-si-quieres-estudiar-esta-carrera1-min-768x404.png&f=1&nofb=1&ipt=413898dc14d4ef17f4876e4e2eedc9840f0c84423fc5c2201fb21b45512d8a41&ipo=images" alt="">
+				<h2 class="card__h2">Adm de Empresas</h2>
+				<p class="card__p">El técnico en administración de empresas estara capacitado para  la gestión organizacional y comprender las actividades que hacen al desarrollo de tareas y toma de decisiones programadas, relacionadas con las operaciones de compra y venta, gestión de los recursos humanos, gestión de los fondos y el registro contable. Además, está capacitado para colaborar con algunas actividades relacionadas con la planificación y control organizacional conforme se explicita en el perfil profesional.</p>
+				<a class="card__a" href="#">mas información</a>
+			</div>
+		</div>
+		<div class="container-card">
+			<div class="card">
+				<img class="card__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjockeyplaza.com.pe%2Fresources%2F1139x640-20161025112212.jpg&f=1&nofb=1&ipt=ac50f84f683879337d0ae7818b3813fbecfabbd9451d4c2bb72656d297fdb1b7&ipo=images" alt="">
+				<h2 class="card__h2">Gastronomía</h2>
+				<p class="card__p">El Técnico en Gastronomía está capacitado para desarrollar los procesos de pre elaboración, preparación y conservación de elaboraciones culinarias básicas y avanzadas, aplicando con autonomía las técnicas correspondientes, consiguiendo la calidad y estructuras de sabor de las principales gastronomías locales, regionales, nacionales e internacionales.</p>
+				<a class="card__a" href="#">mas información</a>
+			</div>
+		</div>
 	</section>
-	<script src="./js/main.js"></script>
+	<script src="./js/main.js" type="module"></script>
 </body>
 </html>
