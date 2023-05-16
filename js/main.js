@@ -1,35 +1,29 @@
 import driversNavBtns from './drivers/navBtns.js'
-let isVisibleNavBar = false;
+
 
 
 const btnPrimary = document.querySelector(".nav__h1-responsive");
 btnPrimary.addEventListener("click", e => {
-    window.location.reload()   
+    window.location.reload()
 });
 
-driversNavBtns()
-
-
+driversNavBtns();
+// porcion para manejar en nav en reponsive
 const btnNav = document.querySelector(".nav-responsive__nav-btn");
 const navResponsive = document.querySelector(".nav-responsive");
 btnNav.addEventListener("click", () => {
-    const body = document.querySelector(".body");
-    if (!isVisibleNavBar) {
-        isVisibleNavBar = true;
-        navResponsive.children[2].style.display = "flex";
-        navResponsive.children[1].children[0].style.display = "none";
-        navResponsive.children[1].children[1].style.display = "block"    
-        navResponsive.children[2].style.borderBottom = "1px solid black";
-        navResponsive.style.borderBottom = "1px solid black"
-        navResponsive.style.background = "rgb(69, 6, 6)";
+    const navBar = navResponsive.children[2]
+    navBar.classList.toggle("toogle-nav");
+    if (navBar.className == "nav__ul-responsive toogle-nav") {
         navResponsive.style.position = "fixed";
+        setTimeout(() => {
+            navResponsive.style.background = "rgb(100, 3, 3)";
+        }, 480);
     } else {
-        isVisibleNavBar = false;
-        navResponsive.children[2].style.display = "none";
-        navResponsive.children[1].children[1].style.display = "none";
-        navResponsive.children[1].children[0].style.display = "block"    
-        navResponsive.style.borderBottom = "none"
-        navResponsive.style.background = "transparent";
         navResponsive.style.position = "absolute";
-    }
+        setTimeout(() => {
+            navResponsive.style.background = "transparent"
+        }, 480);
+    };
+    navBar.style.transition = "transform 0.5s ease-in-out";
 });
