@@ -16,6 +16,7 @@ $font-text: "Times New Roman";
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
 @import "./components/nav.scss";
 @import "./components/nav-responsive.scss";
 @import "./components/presentation.scss";
@@ -49,10 +50,10 @@ $font-text: "Times New Roman";
       .card {
         cursor: pointer;
         width: 300px;
-        height: max-content;
+        height:300px;
         .card__img-news {
           width: 100%;
-          height: 225px;
+          height: 200px;
         }
         .card__p-title {
           font-size:19px;
@@ -120,10 +121,13 @@ $font-text: "Times New Roman";
 .section-basic-cycle {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap:10px;
   width: 100%;
   min-height:100vh;
   position: relative;
   background: url('../img/img-basic-cycle/img1.jpg') no-repeat center center/cover;
+  animation: cambiarImagen 20s infinite alternate ease;
   .bg-color {
     display: flex;
     flex-direction: column;
@@ -154,6 +158,11 @@ $font-text: "Times New Roman";
       user-select: none;
       background: rgba(0, 0, 0, 0.6);
       padding:40px;
+      cursor:pointer;
+      background: rgba(0, 0, 0, .3);
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+      border: 1.5px solid rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -164,11 +173,14 @@ $font-text: "Times New Roman";
   }
 
   &__p-info {
+    text-align: justify;
     padding:10px;
     width: 70%;
-    margin:auto;
     position:relative;
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, .3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -182,7 +194,7 @@ $font-text: "Times New Roman";
 @media only screen and (max-width:500px) {
   .section-basic-cycle {
     &__p-info {
-      width: 100%;
+      width: 70%;
     }
   }
 }
@@ -208,6 +220,7 @@ $font-text: "Times New Roman";
   }
 }
 
+
 @keyframes cambiarImagen {
   0% {
     background: url('../img/img-basic-cycle/img1.jpg') no-repeat center center/cover;
@@ -218,14 +231,14 @@ $font-text: "Times New Roman";
   }
 
   50% {
-    background: url('../img/img-basic-cycle/img1.jpg') no-repeat center center/cover;
+    background: url('../img/img-basic-cycle/img3.jpg') no-repeat center center/cover;
   }
 
   75% {
-    background: url('../img/img-basic-cycle/img1.jpg') no-repeat center center/cover;
+    background: url('../img/img-basic-cycle/img4.jpg') no-repeat center center/cover;
   }
 
   100% {
-    background: url('../img/img-basic-cycle/img1.jpg') no-repeat center center/cover;
+    background: url('../img/img-basic-cycle/img5.jpg') no-repeat center center/cover;
   }
 }
