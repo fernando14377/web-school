@@ -51,12 +51,6 @@
 
     .card__a {
       text-decoration: none;
-      // padding: 10px;
-      // background: $color-school;
-      // color: white;
-      // width: max-content;
-      // margin: 5px;
-      // font-family: $font-text;
       .card__a-button {
         margin:10px 0px;
         border: none;
@@ -67,9 +61,11 @@
         width: 120px;
         text-transform: uppercase;
         cursor: pointer;
-        color:black;
+        background:$color-pared;
+        color:$color-school;
         transform: skew(-21deg);
         span {
+          font-family: $font-text;
           color:inherit;
           display: inline-block;
           transform: skew(21deg);
@@ -86,7 +82,7 @@
         background: $color-school;
         opacity: 0;
         z-index: -1;
-        transition: all 0.5s;
+        transition: all 0.3s;
       }
 
       .card__a-button:hover {

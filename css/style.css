@@ -10,18 +10,17 @@
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
-  background: white;
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(104, 34, 34);
+  background: rgb(69, 6, 6);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: rgb(69, 6, 6);
-  border: 2px solid rgb(104, 34, 34);
+  background: rgb(104, 34, 34);
   border-radius: 10px;
+  border: 1px solid rgb(69, 6, 6);
 }
 
 .nav {
@@ -390,10 +389,12 @@ body {
   width: 120px;
   text-transform: uppercase;
   cursor: pointer;
-  color: black;
+  background: white;
+  color: rgb(69, 6, 6);
   transform: skew(-21deg);
 }
 .container-cards .card .card__a .card__a-button span {
+  font-family: "Times New Roman";
   color: inherit;
   display: inline-block;
   transform: skew(21deg);
@@ -408,7 +409,7 @@ body {
   background: rgb(69, 6, 6);
   opacity: 0;
   z-index: -1;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .container-cards .card .card__a .card__a-button:hover {
   color: #fff;

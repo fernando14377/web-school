@@ -17,18 +17,17 @@ $font-text: "Times New Roman";
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
-  background: white;
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(104, 34, 34);
+  background: $color-school;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: $color-school;
-  border:2px solid rgb(104, 34, 34);
+  background: rgb(104, 34, 34);
   border-radius: 10px;
+  border:1px solid $color-school;
 }
 
 @import "./components/nav.scss";
