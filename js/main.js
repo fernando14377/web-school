@@ -8,7 +8,7 @@ btnPrimary.addEventListener("click", e => {
 });
 
 driversNavBtns();
-// porcion para manejar en nav en reponsive
+// parte para manejar el nav en reponsive
 const btnNav = document.querySelector(".nav-responsive__nav-btn");
 const navResponsive = document.querySelector(".nav-responsive");
 btnNav.addEventListener("click", () => {
@@ -27,3 +27,18 @@ btnNav.addEventListener("click", () => {
     };
     navBar.style.transition = "transform 0.5s ease-in-out";
 });
+
+
+
+addEventListener("scroll", () => {
+    const widgetWhatsapp = document.querySelector(".widget");
+    if (window.scrollY >= 100) {
+        widgetWhatsapp.classList.add("widget-scroll-animation");
+    } else {
+        try {
+            widgetWhatsapp.classList.remove("widget-scroll-animation");
+        } catch (err) {
+            console.log(err)
+        }
+    }
+})
